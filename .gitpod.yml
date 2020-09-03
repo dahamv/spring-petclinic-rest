@@ -1,5 +1,8 @@
 image:
   file: .gitpod.Dockerfile
 
-#tasks:
-#  - init: ./mvnw install -DskipTests=false
+tasks:
+  - command: npm install -g heroku
+  - command: export DATABASE_URL=jdbc:postgresql://localhost:5432/petclinic
+  - command: export DATABASE_USERNAME=postgres
+  - command: export DATABASE_PASSWORD=
